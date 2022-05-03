@@ -1,4 +1,4 @@
-# Segoe-UI Font on Linux (Ubuntu)
+# Segoe-UI Font on Linux
 
 ## TL;DR
 
@@ -14,11 +14,13 @@
 Open `terminal` and run the command below
 
 ```
+mkdir segoe-ui-linux
+cd segoe-ui-linux
 wget https://raw.githubusercontent.com/mrbvrz/segoe-ui-linux/master/install.sh
 chmod +x install.sh
 ./install.sh
 ```
-
+then change the font, normally in the appearance tab of the settings of your distro of choice
 ## Sample:
 
 Github with Segoe UI font looks better (in the example below displays the [papirus-icon](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) repo)
