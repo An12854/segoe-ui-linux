@@ -16,7 +16,7 @@ Open `terminal` and run the command below
 ```
 mkdir segoe-ui-linux
 cd segoe-ui-linux
-wget https://raw.githubusercontent.com/mrbvrz/segoe-ui-linux/master/install.sh
+wget https://raw.githubusercontent.com/An12854/segoe-ui-linux/master/install.sh
 chmod +x install.sh
 ./install.sh
 ```
