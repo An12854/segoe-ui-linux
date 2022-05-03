@@ -36,7 +36,7 @@ function cekkoneksi(){
     echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
     if [ $? -ne 0 ]; then
         echo -e "$RED [ X ]$BLUE Internet Connection ➜$RED OFFLINE!\n";
-        echo -e "$RED Sorry, you really need an internet connection...."
+        echo -e "$RED You need an internet connection, if your internet is on, verify you can use it or try later...."
         exit 0
     else
         echo -e "$GREEN [ ✔ ]$BLUE Internet Connection ➜$GREEN CONNECTED!\n";
@@ -76,7 +76,7 @@ function continueFont(){
     case $INPUT in
     [Yy]* ) fontinstall;;
     [Nn]* ) end;;
-    * ) echo -e "$RED\n Sorry, try again."; continueFont;;
+    * ) echo -e "$RED\n Dunno what happened, try again later."; continueFont;;
   esac
 }
 
@@ -113,7 +113,7 @@ continueWget() {
   case $INPUT in
     [Yy]* ) wgetinstall;;
     [Nn]* ) end;;
-    * ) echo -e "$RED\n Sorry, try again."; continueWget;;
+    * ) echo -e "$RED\n Dunno what happened, try again later."; continueWget;;
   esac
 }
 
